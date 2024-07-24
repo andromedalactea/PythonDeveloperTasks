@@ -148,6 +148,39 @@ uvicorn app.main:app --reload
     docker run -d --name fastapi-crud-service -p 80:80 fastapi-crud-service
     ```
 
+## Testing
+
+This project includes unit and integration tests to ensure the functionality of the user management service.
+
+### Running Tests
+
+1. **Install the test dependencies:**
+
+    ```sh
+    pip install pytest httpx
+    ```
+
+2. **Set the PYTHONPATH environment variable:**
+
+    ```sh
+    export PYTHONPATH=$(pwd)
+    ```
+
+3. **Run the tests:**
+
+    ```sh
+    pytest
+    ```
+
+### Test Coverage
+
+- **Unit Tests:**
+  - Test the creation of a new user.
+  - Test the retrieval of a user by ID.
+  - Test the retrieval of multiple users with pagination.
+  - Test the update of an existing user.
+  - Test the deletion of a user by ID.
+
 ## AI Assistance
 This project was developed with the assistance of AI tools to enhance the quality of the code and structure. AI was utilized to provide suggestions, improve code readability, and ensure adherence to best practices in software development.
 
